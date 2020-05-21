@@ -1,3 +1,7 @@
-import './module'
+console.log('module.js');
 
-console.log('import/export working!');
+async function start() {
+    return await Promise.resolve('working');
+};
+
+start().then(console.log('is done'));
